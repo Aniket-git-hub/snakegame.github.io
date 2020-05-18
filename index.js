@@ -44,6 +44,24 @@ const update=()=>{
 // [initializingh the frames]
 window.setInterval(update, 250);
 //[initailizing controls]
+document.getElementById("up"). addEventListener("click", ()=>{
+  snake.Yspd = -scale;
+		snake.Xspd = 0;
+});
+ document.getElementById("down"). addEventListener("click", ()=>{
+  snake.Yspd = scale;
+		snake.Xspd = 0;
+});
+
+ document.getElementById("left"). addEventListener("click", ()=>{
+            snake.Xspd = -scale;
+		snake.Yspd = 0;
+});
+ 
+ document.getElementById("right"). addEventListener("click", ()=>{
+  snake.Xspd = scale;
+		snake.Yspd = 0;	
+});
 window.addEventListener("keydown", (event)=>{
 	if (event.code == "ArrowLeft") {
 		snake.Xspd = -scale;
