@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head> <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-	<title>A Snake Game in Javascript</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-
-<div id="container">
-<div id="scorecard">
-	
-</div>
-	<canvas id="canvas">Your Browser does not support Canvas, please upgrade</canvas>
-	<div></div>
-	<div id="button_container">
-	<div style="text-align: center">
-		<button id="up" style="display: inline-block">UP</button>
-	</div>
-	<div style="text-align: center">
-		<button id="left" style="display: inline-block">LEFT</button>
-		<button id="right" style="display: inline-block">RIGHT</button>
-	</div>
-	<div style="text-align: center">
-		<button id="down" style="display: inline-block">DOWN</button>
-	<div>
-</div>
-</div>
-
-
-<script src="Js.js" type="text/javascript" charset="utf-8" async defer></script>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta content='Aniket Singh' name='author'/>
+		<meta content='Global' name='distribution'/>
+		<meta content='Worldwide' name='coverage'/>
+		<meta content='classic snake game, nokia snake game, sanke game, how to make snake game' name='keywords'/>
+		<meta content='This is a classic snake game that we used to play when we had a nokia phone' name='description'/>
+		<title>Classic Snake Game using Javascript</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://kit.fontawesome.com/9566f1b70e.js" crossorigin="anonymous" ></script>
+	</head>
+	<body>
+		<div id="container" >
+			<div id="scoreboard">
+			</div>
+			<div style="text-align: left">
+				<button id="pausebtn" type="button"><i class="fas fa-pause"></i></button>
+			</div>
+			<canvas id="canvas" width="360" height="360" style="background-color: black">
+			Your Browser does not support Canvas, please upgrade
+			</canvas>
+			<div id="btngroup">
+				<div>
+					<button id="up"><i class="fas fa-caret-up"></i></button>
+				</div>
+				<div>
+					<button id="left"><i class="fas fa-caret-left"></i></button>
+					<span><i class="fas fa-gamepad"></i></span>
+					<button id="right"><i class="fas fa-caret-right"></i></button>
+				</div>
+				<div>
+					<button id="down"><i class="fas fa-caret-down"></i></button>
+				</div>
+			</div>
+		</div>
+		<script src="index.js" type="text/javascript" charset="utf-8" async defer></script>
+		</script>
+	</body>
 </html>
